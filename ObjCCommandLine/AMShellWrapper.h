@@ -61,14 +61,6 @@
     NSDictionary *environment;
     NSString     *launchPath;
     NSArray      *arguments;
-    id           stdinPipe;
-    id           stdoutPipe;
-    id           stderrPipe;
-    NSFileHandle *stdinHandle;
-    NSFileHandle *stdoutHandle;
-    NSFileHandle *stderrHandle;
-    BOOL         stdoutEmpty;
-    BOOL         stderrEmpty;
     BOOL         taskDidTerminate;
 }
 
@@ -77,11 +69,11 @@
 @property (nonatomic, weak) id <AMShellWrapperDelegate>delegate;
 @property (nonatomic, assign) int                      terminationStatus;
 
-- (id)initWithLaunchPath:(NSString *)launch
-        workingDirectory:(NSString *)directoryPath
-             environment:(NSDictionary *)env
-               arguments:(NSArray *)args
-                 context:(void *)pointer;
+- (instancetype)initWithLaunchPath:(NSString *)launch
+                  workingDirectory:(NSString *)directoryPath
+                       environment:(NSDictionary *)env
+                         arguments:(NSArray *)args
+                           context:(void *)pointer;
 
 
 - (void *)context;

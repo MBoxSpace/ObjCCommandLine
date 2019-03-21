@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3225932F22434F4700A5EC2B /* AMPTYShellWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 3225932D22434F4700A5EC2B /* AMPTYShellWrapper.h */; };
+		3225933022434F4700A5EC2B /* AMPTYShellWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3225932E22434F4700A5EC2B /* AMPTYShellWrapper.m */; };
 		AB15DDDB1C1958A700DD1743 /* ObjCCommandLine.h in Headers */ = {isa = PBXBuildFile; fileRef = AB15DDDA1C1958A700DD1743 /* ObjCCommandLine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB15DDE81C1958BE00DD1743 /* AMShellWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = AB15DDE21C1958BE00DD1743 /* AMShellWrapper.h */; };
 		AB15DDE91C1958BE00DD1743 /* AMShellWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = AB15DDE31C1958BE00DD1743 /* AMShellWrapper.m */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3225932D22434F4700A5EC2B /* AMPTYShellWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMPTYShellWrapper.h; sourceTree = "<group>"; };
+		3225932E22434F4700A5EC2B /* AMPTYShellWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMPTYShellWrapper.m; sourceTree = "<group>"; };
 		AB15DDD71C1958A700DD1743 /* ObjCCommandLine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjCCommandLine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB15DDDA1C1958A700DD1743 /* ObjCCommandLine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCCommandLine.h; sourceTree = "<group>"; };
 		AB15DDDC1C1958A700DD1743 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,6 +68,8 @@
 			children = (
 				AB15DDE21C1958BE00DD1743 /* AMShellWrapper.h */,
 				AB15DDE31C1958BE00DD1743 /* AMShellWrapper.m */,
+				3225932D22434F4700A5EC2B /* AMPTYShellWrapper.h */,
+				3225932E22434F4700A5EC2B /* AMPTYShellWrapper.m */,
 				AB15DDE41C1958BE00DD1743 /* ObjCShell.h */,
 				AB15DDE51C1958BE00DD1743 /* ObjCShell.m */,
 				AB15DDE61C1958BE00DD1743 /* NSAppleEventDescriptor+ToObject.h */,
@@ -84,6 +90,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB15DDEC1C1958BE00DD1743 /* NSAppleEventDescriptor+ToObject.h in Headers */,
+				3225932F22434F4700A5EC2B /* AMPTYShellWrapper.h in Headers */,
 				AB15DDDB1C1958A700DD1743 /* ObjCCommandLine.h in Headers */,
 				AB15DDE81C1958BE00DD1743 /* AMShellWrapper.h in Headers */,
 				AB15DDF01C195DCF00DD1743 /* ObjCAppleScript.h in Headers */,
@@ -162,6 +169,7 @@
 				AB15DDE91C1958BE00DD1743 /* AMShellWrapper.m in Sources */,
 				AB15DDF11C195DCF00DD1743 /* ObjCAppleScript.m in Sources */,
 				AB15DDED1C1958BE00DD1743 /* NSAppleEventDescriptor+ToObject.m in Sources */,
+				3225933022434F4700A5EC2B /* AMPTYShellWrapper.m in Sources */,
 				AB15DDEB1C1958BE00DD1743 /* ObjCShell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

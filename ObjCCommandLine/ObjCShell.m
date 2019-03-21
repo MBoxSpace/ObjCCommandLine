@@ -2,7 +2,7 @@
 //
 
 #import "ObjCShell.h"
-#import "AMShellWrapper.h"
+#import "AMPTYShellWrapper.h"
 #include "sys/pipe.h"
 
 static NSString     *SHELL;
@@ -101,11 +101,11 @@ static BOOL         CMD;
     } else {
         args = @[@"-l", @"-c", command];
     }
-    self.task = [[AMShellWrapper alloc] initWithLaunchPath:[[self class] shell]
-                                          workingDirectory:path
-                                               environment:env
-                                                 arguments:args
-                                                   context:NULL];
+    self.task = [[AMPTYShellWrapper alloc] initWithLaunchPath:[[self class] shell]
+                                             workingDirectory:path
+                                                  environment:env
+                                                    arguments:args
+                                                      context:NULL];
 
     self.task.delegate = self;
 
